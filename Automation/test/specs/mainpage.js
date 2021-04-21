@@ -47,28 +47,28 @@ describe("Main page test suite", () => {
     const actualUrl = browser.getUrl();
     expect(actualUrl).to.equal("https://demoqa.com/forms");
   });
-  it("Click on Elements tile and validate the target Url", () => {
+  it("Click on Windows tile and validate the target Url", () => {
     browser.url("https://demoqa.com/");
     const element = $$(".category-cards > div")[2];
     element.click();
     const actualUrl = browser.getUrl();
     expect(actualUrl).to.equal("https://demoqa.com/alertsWindows");
   });
-  it("Click on Elements tile and validate the target Url", () => {
+  it("Click on Widgets tile and validate the target Url", () => {
     browser.url("https://demoqa.com/");
     const element = $$(".category-cards > div")[3];
     element.click();
     const actualUrl = browser.getUrl();
     expect(actualUrl).to.equal("https://demoqa.com/widgets");
   });
-  it("Click on Elements tile and validate the target Url", () => {
+  it("Click on Interactions tile and validate the target Url", () => {
     browser.url("https://demoqa.com/");
     const element = $$(".category-cards > div")[4];
     element.click();
     const actualUrl = browser.getUrl();
     expect(actualUrl).to.equal("https://demoqa.com/interaction");
   });
-  it("Click on Elements tile and validate the target Url", () => {
+  it("Click on Books tile and validate the target Url", () => {
     browser.url("https://demoqa.com/");
     const element = $$(".category-cards > div")[5];
     element.click();
