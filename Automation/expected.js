@@ -4,9 +4,9 @@ export const URLs = {
     alertsWindows : "https://demoqa.com/alertsWindows",
     widgets : "https://demoqa.com/widgets",
     interaction: "https://demoqa.com/interaction",
-    books: "https://demoqa.com/books"
+    books: "https://demoqa.com/books",
+    textBox: "https://demoqa.com/text-box"
 }
-​
 export const labels = {
     title: "ToolsQA",
     footer: "© 2013-2020 TOOLSQA.COM | ALL RIGHTS RESERVED.",
@@ -16,4 +16,4 @@ export const labels = {
     widgets: "Widgets",
     interactions: "Interactions",
     books: "Book Store Application"
-}
+};

@@ -1,4 +1,4 @@
-class TextBox {
+class PracticeForm {
   get labelName() {
     return $("#userName-label").getText();
   }
@@ -6,77 +6,27 @@ class TextBox {
     return $("#userEmail-label").getText();
   }
   get labelGender() {
-    return $("#currentAddress-label").getText();
+    return $$("#genterWrapper > div.col-md-3.col-sm-12")[0].getText();
   }
   get labelMobile() {
     return $("#userNumber-label").getText();
   }
   get labelDateOfBirth() {
-      return $("#dateOfBirth-label");
+      return $("#dateOfBirth-label").getText();
   }
   get labelSubjects() {
-      return $$("#subjects-label")[0];
+      return $$("#subjects-label")[0].getText();
   }
   get labelHobbies() {
-      return $$("#subjects-label")[1];
+      return $$("#subjects-label")[1].getText();
   }
   get labelPicture() {
-      return $$("#subjects-label")[2];
+      return $$("#subjects-label")[2].getText();
   }
   get labelCurrentAddress() {
-      return $("#currentAddress-label");
+      return $("#currentAddress-label").getText();
   }
   get labelStateandCity() {
-      return $("#stateCity-label");
-  }
-  get inputFullName() {
-    return $("#userName");
-  }
-  get inputFullNamePlaceholder() {
-    return this.inputFullName.getAttribute("placeholder");
-  }
-  get inputEmail() {
-    return $("#userEmail");
-  }
-  get inputEmailPlaceholder() {
-    return this.inputEmail.getAttribute("placeholder");
-  }
-  get inputEmail() {
-    return $("#userEmail");
-  }
-  get inputEmailPlaceholder() {
-    return this.inputEmail.getAttribute("placeholder");
-  }
-  get inputCurrentAddress() {
-    return $("textarea#currentAddress");
-  }
-  get inputCurrentAddressPlaceholder() {
-    return this.inputCurrentAddress.getAttribute("placeholder");
-  }
-  get inputPermanentAddress() {
-    return $("textarea#permanentAddress");
-  }
-  fillForm(obj) {
-    this.inputFullName.setValue(obj.fullName);
-    this.inputEmail.setValue(obj.email);
-    this.inputCurrentAddress.setValue(obj.currentAddress);
-    this.inputPermanentAddress.setValue(obj.permanentAddress);
-  }
-  get resultFullName() {
-    return $("#name");
-  }
-  get resultEmail() {
-    return $("#email");
-  }
-  get resultCurrentAddress() {
-    return $("p#currentAddress");
-  }
-  get resultPermanentAddress() {
-    return $("p#permanentAddress");
-  }
-  get btnSubmit() {
-    return $("#submit");
-  }
-}
-
-export default new TextBox();
+      return $("#stateCity-label").getText();
+  }}
+  export default new PracticeForm();
