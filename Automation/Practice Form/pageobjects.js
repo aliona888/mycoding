@@ -28,5 +28,19 @@ class PracticeForm {
   }
   get labelStateandCity() {
       return $("#stateCity-label").getText();
-  }}
-  export default new PracticeForm();
+  }
+  get checkSports() {
+    return $('#hobbies-checkbox-1 + label');
+  }
+  get checkReading() {
+    return $('#hobbies-checkbox-2 + label');
+  }
+  get checkMusic() {
+    return $('#hobbies-checkbox-3 + label');
+  }
+  get allChecked() {
+    return $$(':checked + label').map(el => el.getText());
+  }
+}
+export default new PracticeForm();
+

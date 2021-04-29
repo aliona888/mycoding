@@ -20,3 +20,11 @@ it('Validate the labels in Practice Form area',() => {
     expect(PracticeForm.labelStateandCity).to.equal(labels.stateAndCity);
 });
 });
+
+it('Make clicks on checkboxes -> Sports/Reading/Music and validate the clicks', () => {
+    browser.url(URLs.practiceForm);
+    PracticeForm.checkMusic.click();
+    PracticeForm.checkReading.click();
+    PracticeForm.checkSports.click();
+    expect(PracticeForm.allChecked).to.eql(['Sports', 'Reading', 'Music']);
+  });
