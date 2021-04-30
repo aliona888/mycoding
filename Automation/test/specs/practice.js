@@ -28,3 +28,11 @@ it('Make clicks on checkboxes -> Sports/Reading/Music and validate the clicks', 
     PracticeForm.checkSports.click();
     expect(PracticeForm.allChecked).to.eql(['Sports', 'Reading', 'Music']);
   });
+
+  it('Randomly Select a radio button', () => {
+      browser.url(URLs.radioButton);
+      const selection = Math.round(Math.random() * 2);
+      RadioButton.radioButtons[selection].click();
+      expect(RadioButton.textSuccess).to.equal(RadioButton.radioButtons[selection].getText());
+  });
+  
