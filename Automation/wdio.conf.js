@@ -29,7 +29,8 @@ exports.config = {
     // Patterns to exclude.
     exclude: [
         './test/specs/**/elements.js',
-        './test/specs/**/mainpage.js'
+        './test/specs/**/mainpage.js',
+        './test/specs/**/RadioButtons.js'
     ],
     //
     // ============

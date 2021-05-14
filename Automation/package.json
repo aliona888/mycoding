@@ -8,7 +8,8 @@
   },
   "dependencies": {
     "@wdio/cli": "^7.4.5",
-    "chai": "^4.3.4"
+    "chai": "^4.3.4",
+    "generate-random-data": "0.0.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.14",
