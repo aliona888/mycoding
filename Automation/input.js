@@ -7,7 +7,7 @@ export const inputTextBox = {
 
 export const inputPracticeForm = {
     name: "First Name",
-    name: "last Name",
+    name: "Last Name",
     email: "name@example.com",
     mobile: "Mobile Number",
     currentAddress: "Current Address"

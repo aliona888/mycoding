@@ -10,6 +10,13 @@ export const labels = {
   picture: "Picture",
   currentAddress: "Current Address",
   stateAndCity: "State and City",
+  practiceFormPlaceholders: {
+    firstName: "First Name",
+    lastName: "Last Name",
+    email: "name@example.com",
+    moble: "Mobile Number",
+    currentAddress: "Current Address",
+  },
   textBoxPlaceholders: {
     firstName: "First Name",
     lastName: "Last Name",
@@ -31,4 +38,5 @@ export const URLs = {
   books: "https://demoqa.com/books",
   textBox: "https://demoqa.com/text-box",
   practiceForm: "https://demoqa.com/automation-practice-form",
+  radioButtons: "https://demoqa.com/radio-button"
 };

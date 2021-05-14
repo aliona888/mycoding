@@ -40,21 +40,37 @@ class PracticeForm {
   }
   get allChecked() {
     return $$(':checked + label').map(el => el.getText());
+  
   }
-  get yes(){
-    return $('label[for = "yesRadio"]');
+  get inputFirstName(){
+    return $('#firstName');
   }
-  get no(){
-    return $('label[for = "noRadio"]');
+  get inputFirstNamePlaceholder(){
+    return this.inputFirstName.getAttribute('placeholder');
   }
-  get impressive(){
-    return $('label[for = "impressiveRadio"]');
+  get inputLastName(){
+    return $('#lastName');
   }
-  get radioButtons(){
-    return [this.yes, this.no, this.impressive];
+  get inputLastNamePlaceholder(){
+    return this.inputLastName.getAttribute('placeholder');
   }
-  get textSuccess(){
-    return $('.text-success').getText();
+  get inputFirstName(){
+    return $('#firstName');
+  }
+  get inputEmailPlaceholder(){
+    return this.inputUserEmail.getAttribute('placeholder');
+  }
+  get inputFirstName(){
+    return $('#firstName');
+  }
+  get inputMobilePlaceholder(){
+    return this.inputUserNumber.getAttribute('placeholder');
+  }
+  get inputFirstName(){
+    return $('#firstName');
+  }
+  get inputCurrentAddressPlaceholder(){
+    return this.inputCurrentAddress.getAttribute('placeholder');
   }
 }
 export default new PracticeForm();

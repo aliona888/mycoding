@@ -1,6 +1,7 @@
 const expect = require("chai").expect;
 import {URLs,labels} from "../../Practice Form/expectedp";
 import PracticeForm from "../../Practice Form/pageobjects";
+import inputPracticeForm from "../../input";
 describe('Validate test Practice Form',() => {
 it('Navigate to Practice Form page and check the header text',() => {
     browser.url(URLs.practiceForm);
@@ -19,7 +20,7 @@ it('Validate the labels in Practice Form area',() => {
     expect(PracticeForm.labelCurrentAddress).to.equal(labels.currentAddress);
     expect(PracticeForm.labelStateandCity).to.equal(labels.stateAndCity);
 });
-});
+
 
 it('Make clicks on checkboxes -> Sports/Reading/Music and validate the clicks', () => {
     browser.url(URLs.practiceForm);
@@ -29,10 +30,11 @@ it('Make clicks on checkboxes -> Sports/Reading/Music and validate the clicks', 
     expect(PracticeForm.allChecked).to.eql(['Sports', 'Reading', 'Music']);
   });
 
-  it('Randomly Select a radio button', () => {
-      browser.url(URLs.radioButton);
-      const selection = Math.round(Math.random() * 2);
-      RadioButton.radioButtons[selection].click();
-      expect(RadioButton.textSuccess).to.equal(RadioButton.radioButtons[selection].getText());
+  it('Validate placeholder texts of inputs', () => {
+    expect(PracticeForm.inputFirstNamePlaceholder).to.equal(labels.practiceFormPlaceholders.firstName);
+    expect(PracticeForm.inputLastNamePlaceholder).to.equal(labels.practiceFormPlaceholders.lastName);
+    expect(PracticeForm.inputEmailPlaceholder).to.equal(labels.practiceFormPlaceholders.email);
+    expect(PracticeForm.inputMobilePlaceholder).to.equal(labels.practiceFormPlaceholders.mobile);
+    expect(PracticeForm.inputCurrentAddressPlaceholder).to.equal(labels.practiceFormPlaceholders.currentAddress);
   });
-  
+});
