@@ -5,7 +5,8 @@ export const URLs = {
     widgets : "https://demoqa.com/widgets",
     interaction: "https://demoqa.com/interaction",
     books: "https://demoqa.com/books",
-    textBox: "https://demoqa.com/text-box"
+    textBox: "https://demoqa.com/text-box",
+    practiceForm: "https://demoqa.com/automation-practice-form"
 }
 export const labels = {
     title: "ToolsQA",

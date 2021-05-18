@@ -37,4 +37,3 @@ it('Make clicks on checkboxes -> Sports/Reading/Music and validate the clicks', 
     expect(PracticeForm.inputMobilePlaceholder).to.equal(labels.practiceFormPlaceholders.mobile);
     expect(PracticeForm.inputCurrentAddressPlaceholder).to.equal(labels.practiceFormPlaceholders.currentAddress);
   });
-});

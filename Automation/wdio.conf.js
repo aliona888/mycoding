@@ -24,13 +24,15 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './test/specs/**/*.js'
+        './test/specs/**/random.js'
     ],
     // Patterns to exclude.
     exclude: [
         './test/specs/**/elements.js',
         './test/specs/**/mainpage.js',
-        './test/specs/**/RadioButtons.js'
+        './test/specs/**/RadioButtons.js',
+        './test/specs/**/practice.js',
+        
     ],
     //
     // ============
